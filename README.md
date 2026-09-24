@@ -20,6 +20,14 @@ A desktop companion app for [Elite Dangerous](https://www.elitedangerous.com/) e
 
 ## Installation
 
+### Option A: Download the ready-made .exe (no Python required)
+
+Go to the [Releases page](../../releases) and download the latest `ED Records Tool.exe`. Put it in its own folder (it will create `settings.json`, `own_records.json`, and a `cache` folder next to itself the first time it runs), then just double-click it to run.
+
+> **Note:** Windows Defender or your antivirus may flag the `.exe` or put it in quarantine the first time you run it. This is a well-known false positive with Python apps packaged this way (PyInstaller) -- it isn't unique to this project. If that happens and you'd rather not risk it, use Option B (running from source) instead, where you can read every line of code yourself.
+
+### Option B: Run from source (requires Python)
+
 1. **Install Python**, if you don't already have it: https://www.python.org/downloads/ (make sure to tick "Add Python to PATH" during setup).
 2. **Download this project** -- either `git clone` the repository, or download it as a ZIP from GitHub and extract it somewhere on your computer.
 3. **Open a terminal in the project folder** and install the required packages:
@@ -50,7 +58,7 @@ There's no installer and nothing is written outside the project folder -- no reg
 - `settings.json` -- your configured journal path and preferences
 - `cache/` -- downloaded EDAstro data (safe to discard; it'll just re-download)
 
-To uninstall the Python packages this project used (optional, only relevant if you don't use them for anything else):
+To uninstall the Python packages this project used (only relevant if you ran it from source via Option B, and don't use these packages for anything else):
 ```
 pip uninstall requests beautifulsoup4 pyttsx3
 ```
