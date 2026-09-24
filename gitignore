@@ -1,0 +1,16 @@
+# Personal data -- your own exploration history, never commit this
+own_records.json
+own_records.json.bak
+
+# Your local settings (journal path, refresh interval, etc.)
+settings.json
+
+# Downloaded EDAstro page cache
+cache/
+
+# Python
+__pycache__/
+*.pyc
+
+# Diagnostic script output / test artifacts, if any get created
+bio_species_test_backup.json
